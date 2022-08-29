@@ -14,3 +14,9 @@ def lemmetize_print(words):
 
 text = input("enter text:")
 lemmetize_print(text)
+
+
+import nltk
+tokens = nltk.word_tokenize(text)
+occurrence = {item: tokens.count(item) for item in tokens}
+print(occurrence)
